@@ -1,22 +1,24 @@
 import { StyleSheet } from "react-native";
-import TEMA from "../../app/constants/tema";
 
 const styles = StyleSheet.create({
   container: {
     flexGrow: 1,
+    top: 30,
     backgroundColor: '#ffffff',
     padding: 16,
-    top: 100,
   },
   scrollViewStyle: {
     flex: 1,
     backgroundColor: '#402020',
   },
   card: {
-    backgroundColor: '#284845' ,
+    backgroundColor: '#490404' ,
     borderRadius: 16,
     padding: 20,
     marginVertical: 6,
+    shadowColor: '#13775c',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
     shadowRadius: 8,
     elevation: 3,
     borderWidth: 1,
@@ -30,13 +32,7 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: "700",
     color: '#ffffff',
-    marginBottom: 8,
-  },
-  sub:{
-    marginVertical: 12,
-    fontSize: 20,
-    color: '#ff0000',
-    fontWeight: '900',
+    marginBottom: -20,
   },
   form: {
     marginBottom: 16,
@@ -53,7 +49,7 @@ const styles = StyleSheet.create({
   inputContainer: {
     flexDirection: "row",
     alignItems: "center",
-    backgroundColor: '#9a6a6a',
+    backgroundColor: '#5d3c3c',
     borderRadius: 12,
     borderWidth: 1,
     borderColor: '#FFF',
@@ -96,6 +92,21 @@ const styles = StyleSheet.create({
     alignItems: "center",
     marginTop: 36,
   },
+    footer: {
+    // flex: 1,
+    flexDirection: 'row',
+    // justifyContent: 'space-around',
+    justifyContent: 'center',
+    marginVertical: 24
+  },
+  footerText: {
+    fontSize: 18,
+    color: '#fff'
+  },
+  link: {
+    fontSize: 18,
+    color: '#00ffd9',
+  },
   buttonText: {
     color: '#fff',
     fontSize: 16,
@@ -104,25 +115,7 @@ const styles = StyleSheet.create({
   buttonIcon: {
     marginRight: 8,
   },
-  // botaoCad: {
-  //   padding: 12,
-  // },
-  footer: {
-    // flex: 1,
-    flexDirection: 'row',
-    // justifyContent: 'space-around',
-    justifyContent: 'center',
-    top:20,
-    marginVertical: 24
-  },
-  footerText: {
-    fontSize: 16,
-    color: '#ff1d1d'
-  },
-  link: {
-    fontSize: 16,
-    color: '#34ff29',
-  },
+
 });
 
 export default styles;
